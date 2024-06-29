@@ -82,12 +82,12 @@ if( token ) {
 }
 
 // install dependencies
-	exec( root , 'yarn' , '--ignore-optional' )
+	exec( root , 'npm' , 'install' , '--no-optional' )
 
 for( const mod of modules ) {
 
 	build:
-	exec( root , 'yarn' , 'start' , mod )
+	exec( root , 'npm' , 'start' , mod )
 
 	domain:
 	if( fs.existsSync( `${root}/${mod}/CNAME` ) ) {
