@@ -82,7 +82,7 @@ if( token ) {
 }
 
 // install dependencies
-	exec( root , 'npm' , 'install' , '--no-optional' )
+	exec( root , 'npm' , 'install' , '--omit=optional' )
 
 for( const mod of modules ) {
 
