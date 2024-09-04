@@ -35,7 +35,7 @@ const ref = event.ref && event.ref.replace( 'refs/heads/', '' )
 console.log( 'ref' , ref )
 
 // clone mam
-	exec( root , 'git' , 'clone' , '--branch' , 'master' , 'https://github.com/hyoo-ru/mam.git' , '.' )
+	exec( root , 'git' , 'clone' , '--branch' , 'master' , 'https://github.com/PavelZubkov/mam.git' , '.' )
 
 // clone meta modules
 	for ( const [package, repo] of meta ) {
